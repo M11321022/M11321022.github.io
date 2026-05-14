@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咖啡廳巡禮：社會文化與消費趨勢分析</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coffee: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            200: '#eaddd7',
+                            300: '#e0c1b3',
+                            400: '#d3a28e',
+                            500: '#c38a70',
+                            600: '#ab6d51',
+                            700: '#8c553f',
+                            800: '#6d4335',
+                            900: '#4d3028',
+                        },
+                        accent: '#E74C3C',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f0d0c;
+            color: #eaddd7;
+            font-family: 'Noto Sans TC', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(45, 34, 28, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(234, 221, 215, 0.1);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #eaddd7 0%, #c38a70 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(195, 138, 112, 0.5), transparent);
+        }
+        video {
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        .bento-item {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-item:hover {
+            transform: scale(1.02);
+            border-color: rgba(195, 138, 112, 0.4);
+        }
+    </style>
+</head>
+<body class="selection:bg-coffee-500 selection:text-white">
+
+    <!-- Hero / Infographic Section -->
+    <header class="relative min-h-screen flex flex-col items-center justify-center pt-12 pb-20 px-4">
+        <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-coffee-600 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-coffee-900 rounded-full blur-[150px]"></div>
+        </div>
+
+        <div class="z-10 w-full max-w-6xl">
+            <div class="text-center mb-12 animate-fade-in-up">
+                <span class="inline-block px-4 py-1 rounded-full border border-coffee-500 text-coffee-400 text-sm font-medium mb-4 tracking-widest uppercase">Trend Analysis 2023-2026</span>
+                <h1 class="text-4xl md:text-7xl font-display font-extrabold text-gradient mb-6">咖啡廳巡禮</h1>
+                <p class="text-coffee-300 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+                    從生理需求到空間實踐：探索當代社會文化與消費趨勢的演變
+                </p>
+            </div>
+
+            <div class="relative group animate-fade-in-up" style="animation-delay: 0.2s">
+                <div class="absolute -inset-1 bg-gradient-to-r from-coffee-600 to-coffee-400 rounded-[26px] blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <div class="relative overflow-hidden rounded-3xl shadow-2xl bg-black">
+                    <img src="https://opal.google/board/blobs/9676c12a-f2bd-47b5-a742-8e5312a38c4d" alt="咖啡廳巡禮資訊圖表" class="w-full h-auto object-cover transform transition duration-700 hover:scale-[1.01]">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Abstract Bento Grid -->
+    <section class="max-w-6xl mx-auto px-4 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="md:col-span-2 glass-card p-8 bento-item">
+                <div class="text-coffee-400 mb-4 font-bold tracking-tighter">01</div>
+                <h3 class="text-2xl font-bold mb-4 text-white">文化轉型</h3>
+                <p class="text-coffee-200 leading-relaxed font-light">咖啡廳巡禮已從單純生理需求的咖啡飲用，演變為強調空間實踐與美學認同的體驗式消費。</p>
+            </div>
+            <div class="md:col-span-2 glass-card p-8 bento-item">
+                <div class="text-coffee-400 mb-4 font-bold tracking-tighter">02</div>
+                <h3 class="text-2xl font-bold mb-4 text-white">產業趨勢</h3>
+                <p class="text-coffee-200 leading-relaxed font-light">2023-2026年間，市場聚焦於極致特色化、功能性咖啡及永續性實務。</p>
+            </div>
+            <div class="md:col-span-3 glass-card p-8 bento-item">
+                <div class="text-coffee-400 mb-4 font-bold tracking-tighter">03</div>
+                <h3 class="text-2xl font-bold mb-4 text-white">數位驅動</h3>
+                <p class="text-coffee-200 leading-relaxed font-light">社群媒體演算法深刻影響空間設計，使其轉向視覺傳達導向，促進了產業能見度卻也帶來同質化挑戰。</p>
+            </div>
+            <div class="md:col-span-1 glass-card p-8 bento-item bg-gradient-to-br from-coffee-800 to-coffee-950">
+                <div class="text-coffee-300 mb-4 font-bold tracking-tighter">04</div>
+                <h3 class="text-2xl font-bold mb-4 text-white">社會心理</h3>
+                <p class="text-coffee-100 leading-relaxed font-light">「第三空間」的轉型，成為追求連結的核心場所。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section (Center) -->
+    <section class="relative bg-coffee-950/50 py-24 overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-display font-bold text-white mb-4">感官氛圍：影像與節奏</h2>
+                <div class="w-16 h-1 bg-coffee-500 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="space-y-12">
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-white/5 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <video 
+                        src="https://opal.google/board/blobs/d12225dd-8e73-4686-92f7-14adcbe561b3" 
+                        class="relative w-full aspect-video md:aspect-[16/9] object-cover rounded-2xl"
+                        controls 
+                        playsinline
+                    ></video>
+                </div>
+
+                <div class="glass-card p-6 md:p-8 flex flex-col md:flex-row items-center gap-6">
+                    <div class="bg-coffee-800 p-4 rounded-full animate-pulse">
+                        <svg class="w-8 h-8 text-coffee-300" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3V7.803l8-1.6v3.911A4.369 4.369 0 0015 10c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3V3z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="text-lg font-bold text-white mb-1">氛圍背景配樂</h4>
+                        <p class="text-coffee-400 text-sm">沉浸式環境音，為探店體驗增添空間層次感</p>
+                    </div>
+                    <div class="w-full md:w-auto">
+                        <audio src="https://opal.google/board/blobs/aac8cada-feb7-47ef-a8a9-5160ac40cfa9" controls class="w-full"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Report Section -->
+    <main class="max-w-4xl mx-auto px-6 py-24 space-y-16">
+        
+        <article class="prose prose-invert prose-coffee max-w-none">
+            <header class="border-b border-coffee-800 pb-8 mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">咖啡廳巡禮之社會文化與消費趨勢分析報告</h2>
+                <p class="text-coffee-400">Café Hopping: Socio-Cultural and Consumption Trend Analysis</p>
+            </header>
+
+            <section class="space-y-6">
+                <h3 class="text-2xl font-bold text-coffee-300 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-coffee-800 text-white rounded-lg flex items-center justify-center text-sm">01</span>
+                    定義與起源
+                </h3>
+                <div class="pl-11 space-y-4 text-coffee-100 font-light leading-loose text-lg">
+                    <p>咖啡廳巡禮（Café Hopping）是指消費者在單次行程中連續探訪多家咖啡廳，或是以尋訪具備獨特風格、獨立經營的咖啡館作為休閒旅遊的核心目的。此行為與傳統以獲取咖啡因、滿足生理需求的飲用模式有顯著差異，更側重於對空間氛圍、品牌敘事及工藝細節的體驗式消費。</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                        <div class="bg-coffee-900/50 p-6 rounded-xl border-l-4 border-coffee-600">
+                            <span class="block text-xs font-bold text-coffee-400 mb-2 uppercase">2010年代中期</span>
+                            隨著 Instagram 等社群平台普及，咖啡廳的功能轉型為「視覺消費的場景」。
+                        </div>
+                        <div class="bg-coffee-900/50 p-6 rounded-xl border-l-4 border-coffee-400">
+                            <span class="block text-xs font-bold text-coffee-400 mb-2 uppercase">2023-2026年</span>
+                            巡禮行為發展為微旅遊（Micro-tourism），追求數位社會中的真實空間連結。
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pt-12 space-y-6">
+                <h3 class="text-2xl font-bold text-coffee-300 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-coffee-800 text-white rounded-lg flex items-center justify-center text-sm">02</span>
+                    2023-2026年發展趨勢
+                </h3>
+                <div class="pl-11 space-y-8">
+                    <div class="group">
+                        <h4 class="text-xl font-bold text-white mb-3 group-hover:text-coffee-400 transition-colors">1. 極致特色化 (Specialization)</h4>
+                        <p class="text-coffee-100 font-light leading-relaxed">咖啡廳轉變為「風味策展人」。除了單一產區（Single-origin）豆源外，2025年起，添加適應原、蛋白質的功能性咖啡成為 Z 世代首選，顯示出與健康體驗的跨界融合。</p>
+                    </div>
+                    <div class="group">
+                        <h4 class="text-xl font-bold text-white mb-3 group-hover:text-coffee-400 transition-colors">2. 永續性與透明度 (Sustainability)</h4>
+                        <p class="text-coffee-100 font-light leading-relaxed">永續實務成為品牌競爭力核心。消費者關注再生農業與碳中和議題，更傾向選擇具備環境認證或提供植物奶選項的店家。</p>
+                    </div>
+                    <div class="group">
+                        <h4 class="text-xl font-bold text-white mb-3 group-hover:text-coffee-400 transition-colors">3. 數位行銷與視覺演算法 (Algorithm-Driven)</h4>
+                        <p class="text-coffee-100 font-light leading-relaxed">短影音平台崛起，使空間設計轉向動態視覺導向。新興咖啡廳會優先考量適合運鏡的動線，以契合演算法美學（Algorithmic Aesthetic）。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pt-12 space-y-6">
+                <h3 class="text-2xl font-bold text-coffee-300 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-coffee-800 text-white rounded-lg flex items-center justify-center text-sm">03</span>
+                    第三空間的演變
+                </h3>
+                <div class="pl-11 text-coffee-100 font-light leading-loose text-lg">
+                    <p>咖啡廳作為家庭與工作場所之外的非正式聚集地，在 2024 年後展現出「混合化」特徵：它既是數位遊牧者的臨時辦公室，亦是社交媒體的製片場，更是緩解現代孤獨流行病的重要場所。透過在社群媒體分享「探店」紀錄，巡禮者在虛擬世界中構建出一種基於美學與價值觀的「品味共同體」。</p>
+                </div>
+            </section>
+
+            <section class="pt-12 space-y-6">
+                <h3 class="text-2xl font-bold text-coffee-300 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-coffee-800 text-white rounded-lg flex items-center justify-center text-sm">04</span>
+                    真實性與同質化
+                </h3>
+                <div class="pl-11 text-coffee-100 font-light leading-loose text-lg">
+                    <p>數位媒體具有雙重影響。一方面，演算法導向導致全球咖啡廳出現極簡白牆等同質化（Homogenization）風險；另一方面，數位平台也打破了行銷壟斷，使巷弄內的獨立小店能獲得全球能見度，推動了咖啡產業的民主化。</p>
+                </div>
+            </section>
+
+            <section class="mt-20 p-10 glass-card bg-gradient-to-br from-coffee-900/40 to-transparent">
+                <h3 class="text-2xl font-bold text-white mb-6">結論</h3>
+                <p class="text-coffee-100 leading-loose">咖啡廳巡禮已不再僅是短暫的消費流行，而是一種深刻的文化實踐。在 2023 年至 2026 年的發展進程中，它結合了精品化消費、永續價值與數位美學，重新定義了城市公共空間的功能。未來的咖啡廳將持續作為社會粘合劑，成為個體展示生活美學與社會價值觀的核心場景。</p>
+            </section>
+
+            <section class="mt-16">
+                <h4 class="text-sm font-bold text-coffee-500 uppercase tracking-widest mb-6 border-b border-coffee-800 pb-2">引用文獻來源</h4>
+                <ol class="text-sm text-coffee-400 space-y-3 font-mono italic">
+                    <li>1. Grand View Research (2024). Coffee Market Size, Share & Trends Industry Report.</li>
+                    <li>2. National Coffee Association (NCA, 2024). National Coffee Data Trends.</li>
+                    <li>3. Alok Chaugule (2024). Redefining Coffee Culture and Social Media Interaction.</li>
+                    <li>4. Barista Life (2025). Coffee Trends 2024: Key Industry Insights.</li>
+                    <li>5. JBHOST (2025). Instagram-Driven Customer Journey.</li>
+                    <li>6. The Star (2024). Cafe-hopping culture a lifestyle now.</li>
+                    <li>7. Medium/Dnielrberts (2025). The Rise of the Third Place.</li>
+                </ol>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer Information -->
+    <div class="w-full bg-black py-16 border-t border-coffee-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="space-y-4">
+                <p class="text-coffee-300 text-sm tracking-widest uppercase">學號：M11321022</p>
+                <div class="section-divider my-6"></div>
+                <h5 class="text-xl text-white font-light">
+                    【主題探索報告】by <span class="text-accent italic font-bold">Famidoc Chang</span>
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="fixed top-0 left-0 w-full h-full pointer-events-none z-[-1] opacity-30">
+        <div class="absolute top-[20%] right-[10%] w-[40vw] h-[40vw] rounded-full bg-coffee-800 mix-blend-screen filter blur-[150px] animate-float"></div>
+        <div class="absolute bottom-[10%] left-[5%] w-[30vw] h-[30vw] rounded-full bg-coffee-950 mix-blend-screen filter blur-[120px]" style="animation-delay: -3s;"></div>
+    </div>
+
+</body>
+</html>
